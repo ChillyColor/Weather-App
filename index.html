@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <section class="title">
+        <h1>Weather App</h1>
+        <p>Stay Updated, Stay Prepared.</p>
+    </section>
+
+    <section class="container">
+        <div class="box-1">
+            <form onsubmit="getWeather(event)">
+                <input id="city" type="text" placeholder="Enter City Name" value="" />
+                <button type="submit">Fetch</button>
+            </form>
+            <div id="details">
+                <div>
+                    <h2>Click on fetch</h2>
+                    <p>I am waiting</p>
+                </div>
+            </div>
+        </div>
+        <div class="box-2 item">
+            <div class="innerbox">
+                <h2>Temperature</h2>
+                <p id="temprerature"></p>
+                <p id="flslyk"></p>
+            </div>
+        </div>
+        <div class="box-3 item">
+            <div class="innerbox">
+                <h2>Condition</h2>
+                <p id="condition"></p>
+            </div>
+
+        </div>
+        <div class="box-4 item">
+            <div class="innerbox">
+                <h2>Wind Speed</h2>
+                <p id="wind"></p>
+            </div>
+
+        </div>
+        <div class="box-5 item">
+            <div class="innerbox">
+                <h2>Humidity</h2>
+                <p id="humidity"></p>
+            </div>
+
+        </div>
+        <div class="box-6 item">
+            <div class="innerbox">
+                <h2>Visibility</h2>
+                <p id="vis"></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

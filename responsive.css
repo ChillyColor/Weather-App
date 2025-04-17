@@ -1,0 +1,70 @@
+/* For tablets and smaller laptops (≤ 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .box-1 {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    input, button {
+        width: 160px;
+        font-size: 0.95rem;
+    }
+
+    #details {
+        padding: 2rem;
+        font-size: 18px;
+    }
+
+    .title > h1 {
+        font-size: 2rem;
+    }
+
+    .title > p {
+        font-size: 1rem;
+    }
+}
+
+/* For mobile phones (≤ 600px) */
+@media (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .box-1 {
+        width: 100%;
+    }
+
+    .item {
+        font-size: 1.5rem;
+    }
+
+    input, button {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    #details {
+        padding: 1.5rem;
+        font-size: 16px;
+    }
+
+    .title > h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
